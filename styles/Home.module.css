@@ -21,6 +21,29 @@
   align-items: flex-start;
 }
 
+.heading h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  line-height: 15%;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+.heading h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: .2px;
+  color: white;
+}
+
+.heading a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: bottom;
+  text-decoration-line: underline;
+  color: white;
+}
 
 .footer {
   background-color: #fafafa;
@@ -47,36 +70,6 @@
   margin: 10px;
 }
 
-/* .title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-} 
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-} */
-
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -90,7 +83,7 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .container {
     width: 100%;
     flex-direction: column;
   }
