@@ -4,14 +4,12 @@ import market from '../public/Group.svg';
 
 const Marketplace = () => {
     return (
-        <div>
-        <Image
-            className="market"
-            src={market}
-            alt="marketplace"
-            layout="responsive" 
+            <Image
+                src={market}
+                alt="marketplace"
+                width={50}
+                height={50}
             />
-    </div>
   )
 }
 
