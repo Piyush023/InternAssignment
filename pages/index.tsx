@@ -1,23 +1,25 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Logo from '../Component/logo'
-import SearchBar from '../Component/searchbar'
-import Marketplace from '../Component/marketplace'
-import Notification from '../Component/notification'
-import Heading from '../Component/heading'
-import Cards from '../Component/cards'
-// import styled from '@emotion/styled'
-import Footer from '../Component/footer'
+import Logo from '../Component/Logo'
+import SearchBar from '../Component/Searchbar'
+import Marketplace from '../Component/Marketplace'
+import Heading from '../Component/Heading'
+import Cards from '../Component/Cards'
+import styled from '@emotion/styled'
+import Footer from '../Component/Footer'
 
-// const content = styled.div`
-//   padding: 4rem 0;
-//   flex: 1;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-around;
-//   align-items: flex-start;
-//   background-color: red;
-// `;
+const Content = styled.div`
+  padding: 1.5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  @media (max-width: 450px) {
+      width: 200%;
+      flex-direction: row;
+  }
+`;
 
 export default function Home() {
   return (
@@ -28,12 +30,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.main}>
+      <Content>
           <Logo/>
           <SearchBar/>
           <Marketplace/>
-          <Notification/>
-      </div>
+      </Content>
           <Heading/>
           <Cards/>
           

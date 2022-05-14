@@ -1,27 +1,27 @@
 import Image from 'next/image'
 import notify from '../public/Group 3193.svg'
 import styled from "@emotion/styled";
+import styles from '../styles/Home.module.css';
 
-const Notify = styled.span`
-    flex: 1;
+const Notify = styled.div`
     display: flex;
-    flex-direction: flex-end;
-    position: absolute;
-    right: 10.5%;
-    top: 1%;
     flex: 1;
+    flex-direction: row;
+    justify-content: center;
 `;
 
 
 const Notification = () => {
     return (
         <Notify>
-            <Image
-                src={notify}
-                alt="notification"
-                width={100}
-                height={100}
-            />
+            <div>
+                <Image
+                    src={notify}
+                    alt="notification"
+                    width={100}
+                    height={100}
+                />
+            </div>
         </Notify>    
     );
 }

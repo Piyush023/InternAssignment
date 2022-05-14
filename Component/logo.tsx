@@ -7,11 +7,8 @@ const Size = styled.div`
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    position: absolute;
-    left: 15.5%;
-    top: 0.1%;
+    justify-content: center;
+    align-items: flex-end;
 `;
 
 const Logo = () => {

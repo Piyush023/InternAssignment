@@ -47,7 +47,7 @@ const Footer = () => {
                                 <a href="https://rario.com/privacy-policy">Privacy</a>
                                 <a href="https://rario.freshdesk.com/support/home">Help</a>
                                 <a href="https://rario.com/custom/press/p2KygpsMUAvoXLBqnsoxX">Press</a>
-                                <a href="https://rario.com/contact-us">Newsletters</a>
+                                <a href="https://rario.com/contact-us" >Newsletters</a>
                             </div>
                         </Links>
                         <Links>

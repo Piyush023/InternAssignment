@@ -8,102 +8,112 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import styled from '@emotion/styled'
 
-const Card = styled.div`
-    padding: 4rem 0;
-    flex: 1;
-    display: 'flex';
-    flexDirection: 'row';
-    justify-content: 'space-between';
-    align-items: flex-start;
-    background-color: red;
-    }
+const Button = styled.div`
+    width: 134px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 2.2;
+    text-align: center;
+`;
+
+const Detail = styled.span`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 5px;
 `;
 
 const Cards = () => {
     return (
-        // <Card>
             <div className={styles.Cards}>
-                <div className="Card1">
+                <div>
                     <Image
-                    className="hattrick"
                     src={card1}
                     alt="Hat Trick"
-                    layout="responsive"
                     />
-                    <div className="Detail1">
+                    <Detail>
                         <h4>Hat Trick</h4>
                         <h5>Rashid Khan, TKR</h5>
-                        <h6>   
+                        <h5>   
                             Silver Tier Moment Card
-                            Serial #21/2000
-                        </h6>
+                        </h5>
+                        <h6>Serial #21/2000</h6>
+                    </Detail>
+                    <div className={styles.button}>
+                        <Button>View</Button>
                     </div>
-                    <button>View</button>
                 </div>
-                <div className="Card2">
+                <div>
                     <Image
-                    className="super"
                     src={card2}
                     alt="Super Over"
-                    layout="responsive" 
                     />
-                    <div className="Detail2">
+                    <Detail>
                         <h4>Super Over</h4>
                         <h5>Carlos Brathwaite, TKR</h5>
-                        <h6>   
+                        <h5>   
                             Silver Tier Moment Card
-                            Serial #25/2000
-                        </h6>
+                        </h5>
+                        <h6>Serial #25/2000</h6>
+                    </Detail>
+                    <div className={styles.button}>
+                        <Button>View</Button>
                     </div>
-                    <button>View</button>
                 </div>
-                <div className="Card3">
+                <div>
                     <Image
-                    className="catch"
                     src={card3}
-                    alt="Catch"
-                    layout="responsive" 
+                    alt="Catch" 
                     />
-                    <div className="Detail3">
+                    <Detail>
                         <h4>Catch</h4>
                         <h5>Jonathan Carter, BT</h5>
-                        <h6>   
+                        <h5>   
                             Silver Tier Moment Card
+                        </h5>
+                        <h6>
                             Serial #25/2000
                         </h6>
+                    </Detail>
+                    <div className={styles.button}>
+                        <Button>View</Button>
                     </div>
-                    <button>View</button>
                 </div>
-                <div className="Card4">
+                <div>
                     <Image
-                    className="ton"
                     src={card4}
                     alt="Another Ton"
-                    layout="responsive" 
                     />
-                    <div className="Detail4">
+                    <Detail>
                         <h4>Another Ton</h4>
                         <h5>Chris Gayle, BT</h5>
-                        <h6>   
+                        <h5>   
                             Silver Tier Moment Card
-                            Serial #25/2000
-                        </h6>
+                        </h5>
+                        <h6>Serial #25/2000</h6>
+                    </Detail>
+                    <div className={styles.button}>
+                        <Button>View</Button>
                     </div>
-                    <button>View</button>
                 </div>
-                <div className="Card5">
+                <div>
                     <Image
-                    className="nothing"
                     src={card5}
                     alt="Nothing"
-                    layout="responsive" 
                     />
-                    <div className="Detail5">
-                        <p>Revealing...</p>
-                    </div>
+                    <p>Revealing...</p>
                 </div>
             </div>
-        // </Card>
     )
 }
 
